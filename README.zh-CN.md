@@ -52,12 +52,15 @@
 [组件传值](https://github.com/pacterafe/team-react/blob/master/src/study-demo/passByValue/index.js) 
 
 <h3 id="component">2、创建组件的方式</h3>
+
 [创建组件](https://github.com/pacterafe/team-react/blob/master/src/study-demo/component/index.js) 
 
 <h3 id="event">3、事件绑定的方式</h3>
+
 [事件绑定](https://github.com/pacterafe/team-react/blob/master/src/study-demo/event/index.js) 
 
 <h3 id="jsx">4、jsx浅析</h3>
+
 [jsx浅析](https://github.com/pacterafe/team-react/blob/master/src/study-demo/jsx/index.js) 
 
 <h3 id="redux">5、状态管理器</h3>
