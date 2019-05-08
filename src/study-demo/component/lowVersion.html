@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>React15.2.0版本</title>
+    <script src="https://cdn.bootcss.com/react/15.2.0/react.js"></script>
+    <script src="https://cdn.bootcss.com/react/15.2.0/react-dom.js"></script>
+    <!--<script src="https://cdn.bootcss.com/react/16.8.6/umd/react.development.js"></script>-->
+    <!--<script src="https://cdn.bootcss.com/react-dom/16.8.6/umd/react-dom.development.js"></script>-->
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+<body>
+<div id="root"></div>
+    <script type="text/babel">
+        var Button = React.createClass({
+            // 定义传入props中的属性各种类型  initialValue={123}报错
+            propTypes: {
+                initialValue: React.PropTypes.string
+            },
+            // 组件默认的props对象
+            defaultProps:{
+                initialValue:''
+            },
+            // 生命周期
+            getInitialState:function(){
+                return {
+                    text:  this.props.initialValue || 'placeholder'
+                }
+            },
+            handleChange:function(event){
+                this.setState({
+                    text: event.target.value
+                })
+            },
+            render:function(){
+                return (
+                    <section>
+                        <input onChange={this.handleChange} value={this.state.text}/>
+                        <p>{this.state.text}</p>
+                    </section>
+                )
+            }
+        })
+        ReactDOM.render(
+            <Button initialValue={'Lucy'} />,
+            document.getElementById('root')
+        );
+
+    </script>
+</body>
+</html>
