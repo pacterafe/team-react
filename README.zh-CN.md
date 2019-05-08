@@ -48,16 +48,16 @@
 
 <h2 id="前期">一、前期的基础知识准备团队分享</h2>
 <h3 id="information">1、组件传值</h3>
-组件之间传值 包括( 1).子传父，父传子 state 状态 类似vue里面的data/ )<font color="#909">zhenliu</font>
+[组件传值demo](./src/study-demo/passByValue/index.js) 
 
 <h3 id="component">2、创建组件的方式</h3>
-创建组件的方式有几种，各种方式有什么不同  - <font color="#909">lindong</font>
+[创建组件demo](./src/study-demo/component/index.js) 
 
 <h3 id="event">3、事件绑定的方式</h3>
-事件绑定的方式有几种，各种方式有什么不同  - <font color="#909">shumei</font>
+[事件绑定demo](./src/study-demo/event/index.js) 
 
 <h3 id="jsx">4、jsx浅析</h3>
-jsx 的引入 - <font color="#909">yanwen</font>
+[jsx浅析demo](./src/study-demo/event/index.js) 
 
 <h3 id="redux">5、状态管理器</h3>
 redux状态管理器***
