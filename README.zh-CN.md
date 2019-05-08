@@ -48,8 +48,8 @@
 
 <h2 id="前期">一、前期的基础知识准备团队分享</h2>
 <h3 id="information">1、组件传值</h3>
-[组件传值demo](./src/study-demo/passByValue/index.js) 
-[English](./README.md)
+
+[组件传值demo](https://github.com/pacterafe/team-react/blob/master/src/study-demo/passByValue/index.js) 
 
 <h3 id="component">2、创建组件的方式</h3>
 [创建组件demo](./src/study-demo/component/index.js) 
