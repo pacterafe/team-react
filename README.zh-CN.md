@@ -49,16 +49,16 @@
 <h2 id="前期">一、前期的基础知识准备团队分享</h2>
 <h3 id="information">1、组件传值</h3>
 
-[组件传值demo](https://github.com/pacterafe/team-react/blob/master/src/study-demo/passByValue/index.js) 
+[组件传值](https://github.com/pacterafe/team-react/blob/master/src/study-demo/passByValue/index.js) 
 
 <h3 id="component">2、创建组件的方式</h3>
-[创建组件demo](./src/study-demo/component/index.js) 
+[创建组件](https://github.com/pacterafe/team-react/blob/master/src/study-demo/component/index.js) 
 
 <h3 id="event">3、事件绑定的方式</h3>
-[事件绑定demo](./src/study-demo/event/index.js) 
+[事件绑定](https://github.com/pacterafe/team-react/blob/master/src/study-demo/event/index.js) 
 
 <h3 id="jsx">4、jsx浅析</h3>
-[jsx浅析demo](./src/study-demo/event/index.js) 
+[jsx浅析](https://github.com/pacterafe/team-react/blob/master/src/study-demo/jsx/index.js) 
 
 <h3 id="redux">5、状态管理器</h3>
 redux状态管理器***
