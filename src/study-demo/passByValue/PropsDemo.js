@@ -69,9 +69,11 @@ import { directive } from '@babel/types';
 			this.timerID = setInterval(() => {
 				this.tick();
 			}, 1000);
+			console.log('组件插入DOM')
 		};
 		componentWillUnmount (){
 			clearInterval(this.timerID);
+			console.log('组件卸载')
 		};
 		tick (){
 			this.setState({date :new Date()})
@@ -134,7 +136,7 @@ class Toggle extends React.Component{
 		}));
 	}
 
-	//箭头函数写法，缺点是影响性能呢；在组件中传入<button onClick= {this.handleClick.bind(this)}>也影响性能
+	//箭头函数写法实验阶段；推荐；在组件中传入<button onClick= {this.handleClick.bind(this)}>也影响性能
 	// handleClick =()=>{
 	// 	this.setState(state => ({
 	// 		isToggleOn:!state.isToggleOn
