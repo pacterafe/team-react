@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>React jsx06实例</title>
+    <script src="https://cdn.staticfile.org/react/16.4.0/umd/react.development.js"></script>
+    <script src="https://cdn.staticfile.org/react-dom/16.4.0/umd/react-dom.development.js"></script>
+    <script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="example"></div>
+    <script type="text/babel">
+      var myStyle = {
+         fontSize: 100,
+         color: '#FF0000'
+      };
+      ReactDOM.render(
+      	<div>
+	      	<p>React 推荐使用内联样式。我们可以使用 camelCase 语法来设置内联样式. React 会在指定元素数字后自动添加 px </p>
+	      	<h1 style = {myStyle}>样式</h1>
+      	</div>
+      	,
+      	document.getElementById('example')
+      );
+    </script>
+  </body>
+</html>
