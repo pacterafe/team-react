@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>React jsx02实例</title>
+    <script src="https://cdn.staticfile.org/react/16.4.0/umd/react.development.js"></script>
+    <script src="https://cdn.staticfile.org/react-dom/16.4.0/umd/react-dom.development.js"></script>
+    <script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="example"></div>
+    <script type="text/babel">
+      ReactDOM.render(
+      	<div>
+      	   <p>我们可以在 JSX 中使用 JavaScript 表达式。表达式写在花括号 {} 中</p>
+      	   <h1>{1+1}</h1>
+        </div>
+      	,
+      	document.getElementById('example')
+      );
+    </script>
+  </body>
+</html>
