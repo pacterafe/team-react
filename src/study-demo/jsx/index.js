@@ -10,7 +10,6 @@ import React, { Component } from 'react';
 
 //要将 React 元素渲染到根 DOM 节点中，我们通过把它们都传递给 ReactDOM.render() 的方法来将其渲染到页面上：
   
-
 export default class jsxDmoe extends Component {
   render() {
     return (
