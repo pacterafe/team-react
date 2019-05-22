@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8" />
+		<title> React jsx00实例</title>
+		<script src="https://cdn.staticfile.org/react/16.4.0/umd/react.development.js"></script>
+		<script src="https://cdn.staticfile.org/react-dom/16.4.0/umd/react-dom.development.js"></script>
+		<script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
+		<style>
+			.foo {
+				color: red;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="root"></div>
+		<div id='example'></div>
+		
+		<!--第一个参数是必填，传入的是似HTML标签名称，eg: ul, li 
+		第二个参数是选填，表示的是属性，eg: className 
+		第三个参数是选填, 子节点，eg: 要显示的文本内容-->
+		<script type="text/babel">
+			
+			const e = React.createElement;
+			ReactDOM.render(
+			e('div',null, 'Hello World'), document.getElementById('root') );
+			
+			
+			
+			
+			var child1 = React.createElement('li', null, 'one');
+		    var child2 = React.createElement('li', null, 'two');
+		   
+		    var content = React.createElement('ul', { className: 'teststyle' }, child1, child2); 
+//		    var content = React.createElement('ul', { className: 'teststyle' },[child1, child2]);// 第三个参数可以分开也可以写成一个数组
+		    ReactDOM.render(
+		          content,
+		        document.getElementById('example')
+		      );
+			
+		</script>
+
+
+	</body>
+
+</html>

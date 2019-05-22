@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>React jsx01实例</title>
+    <title>React jsx08实例</title>
     <script src="https://cdn.staticfile.org/react/16.4.0/umd/react.development.js"></script>
     <script src="https://cdn.staticfile.org/react-dom/16.4.0/umd/react-dom.development.js"></script>
     <script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
@@ -11,11 +11,20 @@
     <div id="example"></div>
     <script type="text/babel">
       var arr = [
-        <h1>arr1</h1>,
-        <h2>arr2</h2>,
+        <h1 key='1'>arr1</h1>,
+        <h2 key='2'>arr2</h2>,
       ];
+      var state = {
+            name: 'lily',
+            age: 26,
+            address: 'Beijing',
+            status: false
+        }
       ReactDOM.render(
-        <div>{arr}</div>,
+        <div>
+        	<div>{arr}</div>
+        	<h2 style={{backgroundColor:'red',color:'white',fontSize:40}}>{state.name}</h2>
+        </div>,
         document.getElementById('example')
       )
     </script>
