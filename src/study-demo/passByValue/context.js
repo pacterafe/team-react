@@ -10,6 +10,9 @@ class Parent extends React.Component{
                 <div>
                     <App />
                 </div>
+                <div>
+                    <Myclass />
+                </div>
             </div>
         )
     }
@@ -54,10 +57,61 @@ class ThemedButton extends React.Component {
 class Button extends React.Component{
     static contextType = ThemeContext;
     render(){
-        return <button>
-            {this.context}
-        </button>
+        return (
+            <div>
+                <button>
+                    {this.context}
+                </button>
+                <ComponentFun />
+            </div>
+        )
+        
+        
     }
     
 }
+//Context.Consumer
+//这里，React 组件也可以订阅到 context 变更。这能让你在函数式组件中完成订阅 context。(理解这句话)
+//这需要函数作为子元素（function as a child）这种做法。
+//这个函数接收当前的 context 值，返回一个 React 节点。
+//传递给函数的 value 值等同于往上组件树离这个 context 最近的 Provider 提供的 value 值。
+//如果没有对应的 Provider，value 参数等同于传递给 createContext() 的 defaultValue。
+function ComponentFun(){
+    return (
+        <div>ComponentFun++
+            <ThemeContext.Consumer>
+                {value => value}
+            </ThemeContext.Consumer>
+        </div>
+        
+    )
+}
+
+// Class.contextType
+class Myclass extends React.Component{
+    componentDidMount() {
+        let value = this.context;
+        /* 在组件挂载完成后，使用 MyContext 组件的值来执行一些有副作用的操作 */
+    }
+    componentDidUpdate() {
+    let value = this.context;
+    /* ... */
+    }
+    componentWillUnmount() {
+    let value = this.context;
+    /* ... */
+    }
+
+    render(){
+        return <div>
+            {this.context}
+        </div>
+    }
+}
+Myclass.contextType = ThemeContext
+
+
+//动态 Context
+
+
 export default Parent;
