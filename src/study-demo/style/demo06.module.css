@@ -1,0 +1,18 @@
+.title {
+  color: red;
+}
+/*:local(.title) {
+    color: red;
+}*/
+.item{
+	background: #808080;
+ 
+}
+(:global)(.globalColor) {
+     font-size: 30px;
+}
+:global {
+    .globalColor {
+        color: blue;
+    }
+}
