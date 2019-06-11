@@ -52,6 +52,7 @@ import React from 'react'
 //           <RightComp />
 //         }
 //       />
+
 //     </div>
     
 //   )

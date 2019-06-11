@@ -1,7 +1,7 @@
 import React from 'react'
 import ThemeButton from './theme-button'
 import { themes,ThemeContext} from './theme-context'
-
+// 动态context
 function Toolbar(props){
     return <ThemeButton onClick = {props.changeElement}>click</ThemeButton>
 }

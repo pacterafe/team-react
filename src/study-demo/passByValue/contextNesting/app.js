@@ -1,5 +1,5 @@
 import React from 'react'
-
+//消费多个 Context 
 // Theme context，默认的 theme 是 “light” 值
 const ThemeContext = React.createContext('light');
 
