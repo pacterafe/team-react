@@ -3,9 +3,9 @@
 学习计划 | [English](./README.md) 
 
 ## 目录
-[一、前期的基础知识准备团队分享](#前期)
+一、前期的基础知识准备团队分享
 
-&emsp;&emsp;[1、组件传值](#information)
+&emsp;&emsp;[1、组件传值](./src/study-demo/component) 
 
 &emsp;&emsp;[2、创建组件的方式](#component)
 
@@ -49,7 +49,7 @@
 <h2 id="前期">一、前期的基础知识准备团队分享</h2>
 <h3 id="information">1、组件传值</h3>
 
-[组件传值](https://github.com/pacterafe/team-react/blob/master/src/study-demo/passByValue/index.js) 
+- [x]  [组件传值](https://github.com/pacterafe/team-react/blob/master/src/study-demo/passByValue/index.js) 
 
 <h3 id="component">2、创建组件的方式</h3>
 
