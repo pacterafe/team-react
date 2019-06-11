@@ -1,7 +1,7 @@
 import React from 'react'
 import { themes,ThemeContext } from './theme-context'
 import ThemedButton from './themed-button'
-
+// 在嵌套组件中更新 Context 
 function Context() {
     return (
       <div>
