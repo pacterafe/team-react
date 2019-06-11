@@ -1,6 +1,6 @@
 import React,{ Component } from 'react'
 import classNames from 'classnames'
- const addClass2 = true
+ const addClass2 = false
  class styles extends React.Component {
     render(){
         return (
